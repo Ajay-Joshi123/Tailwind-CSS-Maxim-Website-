@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+.cmn-section-wrapper{
+    @apply py-16;
+}
+.container{
+    @apply px-6 mx-auto;
+}
+.main-about-wrapper{
+    @apply flex flex-col lg:flex-row lg:justify-center gap-x-8 gap-y-8; 
+}
+.main-about-left{
+    @apply max-w-[682px]
+}
+.main-about-right{
+    @apply max-w-[490px]
+}
+.main-about-right h3{
+    @apply text-2xl sm:text-3xl font-medium text-[#212529] pb-2;
+}
+.main-about-right p{
+    @apply text-base font-normal text-[#212529] pb-4;
+}
+.main-about-sub{
+    @apply flex gap-x-4;
+}
+.main-about-sub:not(:last-child){
+    @apply pb-2.5;
+}
+.main-about-sub i{
+    @apply text-5xl text-[#1bac91];
+}
+.main-about-sub-content h4{
+    @apply text-xl sm:text-2xl font-medium text-[#212529] pb-2;
+}
+.main-about-sub-content p{
+    @apply text-base font-normal text-[#212529] pb-4;
+}
+.section-bg{
+    @apply bg-[#f2f9f8] py-16 mb-14;
+}
+.main-wrapper-box{
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+}
+.main-box{
+    @apply p-10 border-l border-l-[#d4e9e6] border-b border-b-[#d4e9e6] h-full;
+}
+.fechured-box{
+    @apply border-l-0;
+}
+.fechured-box-res{
+    @apply border-l-0 lg:border-l lg:border-l-[#d4e9e6]; 
+}
+.fechured-border-res{
+    @apply sm:border-l sm:border-l-[#d4e9e6] lg:border-l-0;
+}
+.main-box h4{
+    @apply text-xl sm:text-2xl font-medium text-[#212529] pb-2;
+}
+.main-box p{
+    @apply text-base font-normal text-[#212529];
+}
+.fechured-box-border-remove{
+    @apply border-l-0 sm:border-l sm:border-l-[#d4e9e6];
+}
+.main-cmn-heading{
+    @apply text-center pb-7;
+}
+.main-cmn-heading h2{
+    @apply text-3xl sm:text-4xl font-light text-[#21413c] pb-2.5;
+}
+.main-cmn-heading p{
+    @apply text-base font-normal text-[#212529];
+}
+.main-services-box{
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8;
+}
+.cmn-box-services{
+    @apply bg-[#ffffff] p-8 text-center rounded-2xl; 
+}
+.cmn-box-services i{
+    @apply text-5xl pb-4; 
+}
+.icon-color-1{
+    @apply text-[#ff689b];
+}
+.cmn-box-services h4{
+    @apply text-xl sm:text-2xl font-medium text-[#212529] pb-2;
+}
+.cmn-box-services p{
+    @apply text-base font-normal text-[#212529];
+}
+.icon-color-2{
+    @apply text-[#3fcdc7];
+}
+.icon-color-3{
+    @apply text-[#41cf2e];
+}
+.icon-color-4{
+    @apply text-[#2282ff];
+}
+.no-margin{
+    @apply mb-0;
+}
+.main-portfolio-wrapper{
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8;
+}
+.main-team-wrapper{
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8;
+}
+.main-team{
+    @apply text-center relative overflow-hidden;
+}
+.team-content{
+    @apply absolute left-12 right-0 bottom-5 transition duration-400;
+}
+.team-content h4{
+    @apply text-lg font-bold text-white pb-0.5;  
+} 
+.team-content p{
+    @apply text-base font-normal text-white;
+}  
+.social-team a{
+    @apply text-white text-lg transition duration-300;
+}
+.social-team a:hover{
+    @apply text-[#1bac91];
+}
+.social-team{
+    @apply absolute left-0 top-0 bottom-0 w-12 transition duration-300 bg-[rgba(0,0,0,0.5)] flex flex-col items-center gap-y-3 pt-3;
+}
+.team-info{
+    @apply opacity-0 absolute bottom-0 top-0 left-0 right-0 transition duration-200;
+}
+.main-team:hover .team-info{
+    @apply opacity-100 bg-[linear-gradient(0deg,_rgba(0,0,0,0.9)_0%,_rgba(0,0,0,0.8)_20%,_rgba(0,212,255,0)_100%)] transition duration-400;
+}
+.main-contact{
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-8 pb-8;
+}
+.main-contact-left{
+    @apply p-4 sm:p-8 bg-[#ffffff] shadow-[0_2px_15px_rgba(0,0,0,0.1)];
+}
+.contact-sub-content{
+    @apply flex gap-x-2.5 sm:gap-x-5;
+}
+.contact-sub-content i{
+    @apply text-2xl text-[#1bac91] w-11 h-11 bg-[#e1f0ee] rounded-[50%] flex items-center justify-center;
+}
+.contact-sub-content h4{
+    @apply text-xl sm:text-2xl font-medium text-[#212529] pb-2;
+}
+.contact-sub-content p{
+    @apply text-sm sm:text-base font-normal text-[#212529];
+}
+.contact-sub-content:not(:last-child){
+    @apply pb-3;
+}
+.main-name-email{
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-5 pb-5;
+}
+.main-cmn-padd-form{
+    @apply pb-5;
+}
+.main-form-input{
+    @apply w-full border border-[#ced4da] min-h-[38px] rounded-[4px] py-[6px] px-[12px] text-base font-normal bg-[#ffffff] focus-visible:outline-0;
+}
+.btn-submit-form{
+    @apply bg-[#1bac91] border-0 min-w-[150px] min-h-11 text-white flex justify-center items-center rounded-[4px] cursor-pointer;
+}
+.btn-submit-form:hover{
+    @apply bg-[#22d8b6]
+}
+.main-btn-submit-form{
+    @apply flex justify-center;
+}
+.footer-top{
+    @apply bg-[#0c1817] py-14 border-b border-b-[#18302c];
+}
+.main-wrapper-footer-content{
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-8;
+}
+.main-footer-content h3{
+    @apply text-2xl sm:text-3xl font-medium text-white pb-3;
+}
+.main-footer-content p{
+    @apply text-base font-normal text-white pb-2;
+}
+.main-social-footer{
+    @apply flex gap-x-2.5 pt-2.5;
+}
+.main-social-footer a{
+    @apply bg-[#1c3733] w-9 h-9 rounded-[50%] flex justify-center items-center transition duration-300 text-white;
+}
+.main-social-footer a:hover{
+    @apply bg-[#1bac91];
+}
+.main-footer-content h4{
+    @apply text-lg font-semibold text-white pb-4;
+}
+.main-footer-content ul li i{
+    @apply text-[#4ae3c6];
+}
+.main-footer-content ul li a{
+    @apply text-base font-normal text-white;
+}
+.main-footer-content ul li a:hover{
+    @apply text-[#4ae3c6]
+}
+.main-footer-content ul li:not(:last-child){
+    @apply pb-2;
+}
+.main-newsletter-form{
+    @apply bg-[#ffffff] py-1.5 px-2.5 relative mt-5 rounded-[4px];
+}
+.input-newsletter{
+    @apply border-0 p-1 w-[calc(100%-110px)];
+}
+.input-newsletter:focus-visible{
+    @apply outline-0;
+}
+.btn-newsletter{
+    @apply bg-[#1bac91] text-white absolute top-0 right-0 bottom-0 rounded-tr-[4px] rounded-br-[4px] px-5 text-base;
+}
+.footer-bottom{
+    @apply bg-black py-8;
+}
+.main-footer-end-text{
+    @apply text-center;
+}
+.main-footer-end-text p{
+    @apply text-base font-normal text-white; 
+}
+.section-no-padd{
+    @apply pt-0;
+}
